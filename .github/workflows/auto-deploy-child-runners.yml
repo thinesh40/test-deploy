@@ -21,7 +21,6 @@ jobs:
     env:
        random-path: "test_path"
     steps:
-      - uses: actions/checkout@v3
 
       - name: Starting Control-Node
         shell: sh
@@ -41,7 +40,6 @@ jobs:
         working-directory: .
     
     steps:
-      - uses: actions/checkout@v3
 
       - name: Starting Control-Node
         shell: sh
@@ -59,7 +57,6 @@ jobs:
         working-directory: .
     
     steps:
-      - uses: actions/checkout@v3
 
       - name: Removing all child runner and proccess
         shell: sh
