@@ -21,8 +21,10 @@ jobs:
         run: |
            echo ${{inputs.main-runner-tag}}
            echo $GITHUB_WORKSPACE
-           dt github install-runner --group=flex-dev --name=runner-003 --location=/home/thineshs/action-runner2/ephemeral-run/ --ldap-username=thineshs --ldap-password="${{secrets.TEST_SCRT}}" --label="child-runner" --ldap-domain=GAR --count=2 --no-prompt --no-start
-           RUNNER_TRACKING_ID="" && nohup /home/thineshs/action-runner2/ephemeral-run/intel/002/run.sh </dev/null &>/dev/null &
+           git version
+           lsb_release -a
+           #dt github install-runner --group=flex-dev --name=runner-003 --location=/home/thineshs/action-runner2/ephemeral-run/ --ldap-username=thineshs --ldap-password="${{secrets.TEST_SCRT}}" --label="child-runner" --ldap-domain=GAR --count=2 --no-prompt --no-start
+           #RUNNER_TRACKING_ID="" && nohup /home/thineshs/action-runner2/ephemeral-run/intel/002/run.sh </dev/null &>/dev/null &
            #echo $RUNNER_TRACKING_ID
            #jobs -l      
            
