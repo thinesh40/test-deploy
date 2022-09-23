@@ -28,7 +28,7 @@ jobs:
         run: |
            echo ${{inputs.main-runner-tag}}
            echo $GITHUB_WORKSPACE
-           RUNNER_TRACKING_ID="" && nohup /home/thineshs/action-runner2/ephemeral-run/intel/002/run.sh </dev/null &>/dev/null &
+           #RUNNER_TRACKING_ID="" && nohup /home/thineshs/action-runner2/ephemeral-run/intel/002/run.sh </dev/null &>/dev/null &
            #echo $RUNNER_TRACKING_ID
            #jobs -l      
            
